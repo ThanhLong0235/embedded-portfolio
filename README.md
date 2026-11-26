@@ -22,7 +22,7 @@ Welcome to my **Embedded Systems Engineering Portfolio**. This repository showca
 
 | Category | Technologies & Tools |
 | :--- | :--- |
-| **Microcontrollers & SoCs** | `STM32` (F1/F4/G0/H7), `ESP32` / `ESP32-S3`, `AVR` / `PIC`, `nRF52` *(edit as needed)* |
+| **Microcontrollers & SoCs** | `STM32` (F1/F4/G0/G4/H7), `ESP32` / `ESP32-S3`, `AVR` / `PIC`, `nRF52` *(edit as needed)* |
 | **Languages** | `C`, `C++`, `Python` (test automation & tooling), `Bash` |
 | **RTOS & Frameworks** | `FreeRTOS`, `ESP-IDF`, `STM32Cube HAL / LL`, `CMSIS`, `Zephyr` *(optional)* |
 | **Interfaces & Protocols** | `UART`, `RS-485 (Modbus RTU)`, `CAN / CANopen`, `I2C`, `SPI`, `ADC / 4–20mA`, `MQTT`, `BLE`, `Wi-Fi` |
@@ -40,7 +40,7 @@ Welcome to my **Embedded Systems Engineering Portfolio**. This repository showca
 | :-: | :--- | :--- | :--- | :--- | :--- | :---: |
 | **01** | [**Industrial Sensor & 4–20mA Node**](./projects/01-industrial-sensor-node/) | `[TODO: High-precision analog current-loop acquisition & Modbus RTU telemetry node]` | Custom PCB / `STM32G030` + `ADS1115` | `C`, `STM32CubeIDE` (HAL/LL), `Altium Designer` | `I2C`, `RS-485 Modbus RTU`, `16-bit ADC`, `4–20mA` | Production / Prototype |
 | **02** | [**Wireless Industrial IoT Edge Gateway**](./projects/02-iot-edge-gateway/) | `[TODO: Multi-protocol gateway bridging fieldbus sensors to cloud MQTT broker with OTA]` | Custom Board / `ESP32-S3` | `C/C++`, `ESP-IDF`, `FreeRTOS`, `MQTT/TLS` | `Wi-Fi`, `BLE`, `RS-485`, `SPI Flash`, `OTA` | Prototype |
-| **03** | [**Custom Embedded Controller & PCB**](./projects/03-custom-pcb-controller/) | `[TODO: Real-time actuator/motor control board with isolated I/O and fault protection]` | Custom 4-Layer PCB / `STM32F4` | `C`, `FreeRTOS`, `Keil MDK` / `CubeIDE`, `Altium` | `CAN`, `PWM`, `UART`, `Opto-isolated Digital I/O` | Completed |
+| **03** | [**Percussion Welding Controller (Rev V3)**](./projects/03-custom-pcb-controller/) | Dual-MCU capacitor-discharge arc welding controller with `200 kSPS` DMA waveform capture, `1 µs` IGBT cutoff & in-situ `PASS/REJECT` inspection | Custom PCB (`220×110 mm`) / `STM32G431` + `ESP32` | `C/C++`, `FreeRTOS`, `Keil MDK`, `PlatformIO`, `Altium` | `SPI-DMA`, `RS-485 Modbus RTU`, `Isolated I2C`, `24V PLC I/O`, `USB Host` | Production (Rev V3) |
 
 ---
 
@@ -68,13 +68,13 @@ Welcome to my **Embedded Systems Engineering Portfolio**. This repository showca
 
 ---
 
-### 3. [Custom Embedded Controller & PCB](./projects/03-custom-pcb-controller/)
-- **Overview:** `[TODO: 2–3 sentences summarizing real-time control, safety interlocks, or HMI integration.]`
-- **Hardware / Board:** `[TODO: e.g., STM32F407VET6 custom control board, DC-DC buck stage, galvanic isolation, current sensing.]`
-- **Software & Toolchain:** `Keil MDK-ARM` / `STM32CubeIDE`, `FreeRTOS`, `Altium Designer`, Logic Analyzer verification.
+### 3. [Dual-MCU Capacitor-Discharge Percussion Welding Controller (Rev V3)](./projects/03-custom-pcb-controller/)
+- **Overview:** Industrial controller for microsecond-scale (`100–5,000 µs`, `0–150 VDC`) capacitor-discharge percussion welding. Decouples hard real-time IGBT ignition and `200 kSPS` transient waveform inspection (`STM32G431`) from multi-tasking HMI visualization, programmable HV power control, `10–100 µF` capacitor bank switching, and USB traceability (`ESP32`).
+- **Hardware / Board:** Custom `220 mm × 110 mm` mixed-signal/HV PCB in `Altium Designer` (`STM32G431CBT6` @ `170 MHz` + `ESP32-WROOM-32U`, `3× 600V/50A` IGBTs with `B0512S` isolated gate drives, `10×` relay capacitor bank via `ISO1540` + `PCF8575`, `0.01%` HV divider, `24V` opto-isolated PLC I/O + `74HC14` Schmitt triggers, `CH376S` USB-A host).
+- **Software & Toolchain:** `Keil MDK-ARM` (`STM32 HAL`), `VS Code + PlatformIO` (`FreeRTOS` dual-core SMP), `Altium Designer`, `800×480` UART HMI.
 - **Key Highlights:**
-  - `[TODO: e.g., Passed EMI/noise stress testing in industrial cabinet environment]`
-  - `[TODO: e.g., Watchdog recovery & hardware fault protection under < 10 µs response time]`
+  - Phase-locked `TIM7 → ADC2 → Circular DMA` acquisition (`5 µs` resolution) synchronized to `EXTI0` workpiece contact for real-time `V0` & arc-time `t(a)` `LSL/USL` quality judgment
+  - Framed `974-byte` `SPI + DMA` inter-MCU waveform bus + closed-loop `Modbus RTU` HV supply sync + chunked FAT32 `DATA_LOG.CSV` export
 - **Details & Documentation:** [View Full Project →](./projects/03-custom-pcb-controller/)
 
 ---
