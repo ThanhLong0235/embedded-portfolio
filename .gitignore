@@ -1,0 +1,42 @@
+# Build & IDE Artifacts (Embedded C/C++)
+build/
+Debug/
+Release/
+*.o
+*.d
+*.elf
+*.bin
+*.hex
+*.map
+*.lst
+*.su
+*.cyclo
+
+# STM32CubeIDE / Eclipse / Keil / IAR / VS Code
+.metadata/
+.settings/
+*.launch
+*.uvguix.*
+*.uvoptx.bak
+*.Administrator.*
+JLinkLog.txt
+.vscode/
+.pio/
+sdkconfig.old
+
+# Altium Designer / KiCad Temporary Files
+History/
+Project Outputs for */
+__Previews/
+*.PcbDoc.htm
+*.SchDoc.htm
+*~
+*-backups/
+fp-info-cache
+
+# OS & Python
+.DS_Store
+Thumbs.db
+__pycache__/
+*.pyc
+.venv/
