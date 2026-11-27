@@ -214,8 +214,8 @@
                 <span data-i18n="en">Hierarchical schematics and compact 2–4 layer PCB layouts in <code>Altium Designer</code> and <code>KiCad</code>.</span>
               </li>
               <li>
-                <span data-i18n="vi">Chống nhiễu công nghiệp (EMC): phân vùng mass độc lập, cách ly quang/DC-DC/<code>ISO1540</code> & dập xung <code>TVS</code>.</span>
-                <span data-i18n="en">Industrial EMC design: zoned ground planes, galvanic isolation (<code>ISO1540</code>/opto/DC-DC) & <code>TVS</code> protection.</span>
+                <span data-i18n="vi">Chống nhiễu công nghiệp (EMC): phân vùng mass độc lập, cách ly quang & nguồn DC-DC cách ly.</span>
+                <span data-i18n="en">Industrial EMC design: zoned ground planes, optocouplers & isolated DC-DC power.</span>
               </li>
               <li>
                 <span data-i18n="vi">Xuất trọn bộ hồ sơ gia công SMT: tối ưu chi phí <code>BOM</code>, <code>Gerber</code>, <code>Pick & Place</code> và ghép <code>Panel</code>.</span>
@@ -241,8 +241,8 @@
                 <span data-i18n="en"><code>PWM DC</code> motor drives (H-bridge MOSFET, direction, soft-start, overcurrent cutoff) & <code>BLDC</code>.</span>
               </li>
               <li>
-                <span data-i18n="vi">Đóng cắt công suất lớn: cụm <code>IGBT 600V/50A</code>, <code>Thyristor / TRIAC</code>, cụm <code>SSR</code>, sạc Solar & BMS.</span>
-                <span data-i18n="en">High-power switching: <code>600V/50A IGBT</code> pulse banks, <code>Thyristor / TRIAC</code>, <code>SSR</code> drives & BMS.</span>
+                <span data-i18n="vi">Đóng cắt công suất lớn: cụm <code>IGBT</code>, <code>Thyristor / TRIAC</code>, cụm <code>SSR</code>, sạc Solar & BMS.</span>
+                <span data-i18n="en">High-power switching: <code>IGBT</code> pulse banks, <code>Thyristor / TRIAC</code>, <code>SSR</code> drives & BMS.</span>
               </li>
               <li>
                 <span data-i18n="vi">Bo mạch máy pha cà phê thương mại 1–3 Group, lò công nghiệp, máy điện phân & điện tử ô tô <code>12V/24V</code>.</span>
@@ -268,8 +268,8 @@
                 <span data-i18n="en">Industrial buses: <code>RS-485 Modbus RTU</code>, <code>CAN Bus</code>, <code>SPI-DMA</code>, <code>4–20mA / 0–10V</code> analog & <code>24V PLC I/O</code>.</span>
               </li>
               <li>
-                <span data-i18n="vi">Gateway đa kết nối: <code>4G LTE / GNSS</code>, <code>LoRa</code>, <code>Ethernet (W5500)</code>, <code>Zigbee / RF</code>, <code>UHF RFID</code> & <code>MQTT</code>.</span>
-                <span data-i18n="en">Multi-link gateways: <code>4G LTE / GNSS</code>, <code>LoRa</code>, <code>Ethernet (W5500)</code>, <code>Zigbee / RF</code>, <code>UHF RFID</code> & <code>MQTT</code>.</span>
+                <span data-i18n="vi">Gateway đa kết nối: <code>4G LTE / GNSS</code>, <code>LoRa</code>, <code>Ethernet</code>, <code>Zigbee / RF</code>, <code>UHF RFID</code> & <code>MQTT</code>.</span>
+                <span data-i18n="en">Multi-link gateways: <code>4G LTE / GNSS</code>, <code>LoRa</code>, <code>Ethernet</code>, <code>Zigbee / RF</code>, <code>UHF RFID</code> & <code>MQTT</code>.</span>
               </li>
               <li>
                 <span data-i18n="vi">Giao diện cảm ứng <code>HMI</code> vẽ đồ thị sóng thời gian thực, LED ma trận cân điện tử & ghi log <code>USB CSV</code>.</span>
@@ -392,7 +392,7 @@
                   <span class="chip highlight">RS-485 Modbus RTU</span>
                   <span class="chip highlight">CAN Bus</span>
                   <span class="chip highlight">4G LTE / GNSS (SIM7600 / A7680C)</span>
-                  <span class="chip highlight">LoRa / Ethernet (W5500)</span>
+                  <span class="chip highlight">LoRa / Ethernet</span>
                   <span class="chip">SPI-DMA / Isolated I2C</span>
                   <span class="chip">UHF RFID / Zigbee / Sub-GHz RF</span>
                   <span class="chip">MQTT / HTTP / OTA</span>
@@ -408,7 +408,7 @@
                   <span class="chip highlight">Altium Designer (2–4L & Panel)</span>
                   <span class="chip highlight">KiCad</span>
                   <span class="chip highlight">DC Motor PWM / H-Bridge / BLDC</span>
-                  <span class="chip highlight">600V IGBT / SSR / TRIAC</span>
+                  <span class="chip highlight">IGBT / SSR / TRIAC</span>
                   <span class="chip">4–20mA / 0–10V / RTD / ADS1115</span>
                   <span class="chip">Keil / IAR / STM32CubeIDE</span>
                   <span class="chip">Oscilloscope & Logic Analyzer</span>
@@ -640,7 +640,7 @@
                 <span data-i18n="en">Dual-MCU (STM32G431 + ESP32) Power Controller</span>
               </h3>
               <p class="gallery-desc">
-                <span data-i18n="vi">Cách ly miền công suất 0–150VDC (IGBT 600V, 10 relay) với miền xử lý tốc độ cao & PLC 24V.</span>
+                <span data-i18n="vi">Cách ly miền công suất 0–150VDC (IGBT, 10 relay) với miền xử lý tốc độ cao & PLC 24V.</span>
                 <span data-i18n="en">Separates 0–150VDC IGBT/relay switching from 170MHz MCU, RS-485, and isolated 24V PLC I/O.</span>
               </p>
             </div>
@@ -694,8 +694,8 @@
                 <span data-i18n="en">Industrial IoT Hub (4G LTE, Ethernet, Wi-Fi, RS-485)</span>
               </h3>
               <p class="gallery-desc">
-                <span data-i18n="vi">Tích hợp A7680C 4G, W5500 LAN, RS-485, Zigbee, 8 ngõ vào cách ly quang và 4 ngõ ra Relay.</span>
-                <span data-i18n="en">Combines A7680C 4G LTE, W5500 LAN, ESP32, RS-485, 8× isolated inputs, and 4× relays.</span>
+                <span data-i18n="vi">Tích hợp 4G LTE, Ethernet, RS-485, Zigbee, 8 ngõ vào cách ly quang và 4 ngõ ra Relay.</span>
+                <span data-i18n="en">Combines 4G LTE, Ethernet, ESP32, RS-485, 8× isolated inputs, and 4× relays.</span>
               </p>
             </div>
           </article>
