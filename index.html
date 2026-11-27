@@ -237,8 +237,8 @@
             </div>
             <ul class="pillar-list">
               <li>
-                <span data-i18n="vi">Mạch lái động cơ 3 pha <code>BLDC ESC</code> (cảm biến Hall/BEMF, khởi động mềm, bảo vệ quá dòng).</span>
-                <span data-i18n="en">Custom 3-phase <code>BLDC ESC</code> motor drives (Hall/BEMF feedback, soft-start & overcurrent protection).</span>
+                <span data-i18n="vi">Điều khiển động cơ <code>DC PWM</code> (cầu H MOSFET, đảo chiều, khởi động mềm, bảo vệ quá dòng) & <code>BLDC</code>.</span>
+                <span data-i18n="en"><code>PWM DC</code> motor drives (H-bridge MOSFET, direction, soft-start, overcurrent cutoff) & <code>BLDC</code>.</span>
               </li>
               <li>
                 <span data-i18n="vi">Đóng cắt công suất lớn: cụm <code>IGBT 600V/50A</code>, <code>Thyristor / TRIAC</code>, cụm <code>SSR</code>, sạc Solar & BMS.</span>
@@ -316,8 +316,8 @@
                 <span data-i18n="en"><strong>Multi-MCU & Telemetry Systems:</strong> Built dual-MCU <code>STM32G4 + ESP32</code> power controllers and <code>4G LTE + Ethernet + RS-485</code> industrial hubs.</span>
               </li>
               <li>
-                <span data-i18n="vi"><strong>Thiết bị thương mại sản xuất loạt:</strong> Hệ mạch máy pha cà phê 1–3 Group (<code>PID RTD + SSR</code>, Flowmeter, HMI), điều khiển <code>BLDC</code>, cân điện tử & ô tô <code>12V/24V</code>.</span>
-                <span data-i18n="en"><strong>Commercial Appliances & Drives:</strong> Complete electronics for 1–3 group espresso machines (<code>PID RTD + SSR</code>, HMI), <code>BLDC</code> drives & <code>12V/24V</code> automotive units.</span>
+                <span data-i18n="vi"><strong>Thiết bị thương mại sản xuất loạt:</strong> Hệ mạch máy pha cà phê 1–3 Group (<code>PID RTD + SSR</code>, Flowmeter, HMI), điều khiển động cơ <code>DC PWM</code> / <code>BLDC</code>, cân điện tử & ô tô <code>12V/24V</code>.</span>
+                <span data-i18n="en"><strong>Commercial Appliances & Drives:</strong> Complete electronics for 1–3 group espresso machines (<code>PID RTD + SSR</code>, HMI), <code>PWM DC</code> / <code>BLDC</code> drives & <code>12V/24V</code> automotive units.</span>
               </li>
               <li>
                 <span data-i18n="vi"><strong>Thực nghiệm & Bàn giao nhà máy:</strong> Hàn mẫu bring-up, đo kiểm xung/EMC bằng Oscilloscope, tối ưu qua nhiều phiên bản (Rev V1 → V4) và viết tool nạp test nhanh.</span>
@@ -407,7 +407,8 @@
                 <div class="chip-wrap">
                   <span class="chip highlight">Altium Designer (2–4L & Panel)</span>
                   <span class="chip highlight">KiCad</span>
-                  <span class="chip highlight">3-Phase BLDC / 600V IGBT / SSR</span>
+                  <span class="chip highlight">DC Motor PWM / H-Bridge / BLDC</span>
+                  <span class="chip highlight">600V IGBT / SSR / TRIAC</span>
                   <span class="chip">4–20mA / 0–10V / RTD / ADS1115</span>
                   <span class="chip">Keil / IAR / STM32CubeIDE</span>
                   <span class="chip">Oscilloscope & Logic Analyzer</span>
@@ -438,7 +439,7 @@
           <article class="video-card">
             <div class="video-stage">
               <video controls preload="metadata" playsinline muted>
-                <source src="assets/media/demo-commercial-espresso-hmi.mp4" type="video/mp4" />
+                <source src="assets/media/demo-commercial-espresso-hmi.mp4?v=2" type="video/mp4" />
               </video>
             </div>
             <div class="video-body">
@@ -512,16 +513,16 @@
             </div>
             <div class="video-body">
               <div class="video-meta">
-                <span class="video-tag">BLDC Drive • Industrial RF</span>
+                <span class="video-tag">PWM Speed • Industrial RF</span>
                 <span class="video-silent-note">Silent Demo</span>
               </div>
               <h3>
-                <span data-i18n="vi">Điều tốc & đảo chiều động cơ BLDC không dây từ xa</span>
-                <span data-i18n="en">Wireless RF Speed & Direction BLDC Motor Drive</span>
+                <span data-i18n="vi">Điều tốc PWM & đảo chiều động cơ không dây từ xa</span>
+                <span data-i18n="en">Wireless RF PWM Speed & Direction Motor Drive</span>
               </h3>
               <p>
-                <span data-i18n="vi">Cặp mạch thu khóa liên động + driver BLDC hộp số điều khiển qua tay phát RF và chiết áp tốc độ.</span>
-                <span data-i18n="en">Custom RF receiver interlock + BLDC gearmotor driver with smooth speed control and battery meter.</span>
+                <span data-i18n="vi">Cặp mạch thu khóa liên động + mạch công suất điều tốc mượt, đảo chiều qua tay phát RF và báo pin.</span>
+                <span data-i18n="en">Custom RF receiver interlock + motor driver stage with smooth PWM speed control and battery meter.</span>
               </p>
             </div>
           </article>

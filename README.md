@@ -21,7 +21,7 @@
 | :--- | :--- |
 | **Firmware & RTOS** | `Bare-metal` & `FreeRTOS` (`STM32`, `ESP32-S3`, `RISC-V`) • `ADC + DMA` (`200 kSPS`), vòng kín `PID (RTD + SSR)`, Encoder/Flowmeter • `Deep-Sleep`, Flash/EEPROM `CRC`, `OTA` & Bootloader. |
 | **Hardware & PCB DFM** | Schematic phân cấp & Layout PCB 2–4 lớp (`Altium Designer`, `KiCad`) • Chống nhiễu EMC, phân vùng mass, cách ly quang/`ISO1540`/DC-DC, `TVS` • Hồ sơ SMT (`BOM`, `Gerber`, `Pick & Place`, `Panel`). |
-| **Power & Machines** | Mạch lái động cơ 3 pha `BLDC ESC` (Hall/BEMF, soft-start) • Đóng cắt `IGBT 600V`, `Thyristor / TRIAC`, cụm `SSR`, BMS • Máy pha cà phê 1–3 Group, thiết bị công nghiệp & ô tô `12V/24V`. |
+| **Power & Machines** | Điều khiển động cơ `DC PWM` (cầu H MOSFET, đảo chiều, khởi động mềm, quá dòng) & `BLDC` • Đóng cắt `IGBT 600V`, `Thyristor / TRIAC`, cụm `SSR`, BMS • Máy pha cà phê 1–3 Group, thiết bị công nghiệp & ô tô `12V/24V`. |
 | **Fieldbus, IoT & HMI** | `RS-485 Modbus RTU`, `CAN Bus`, `SPI-DMA`, analog `4–20mA / 0–10V`, `PLC 24V` • Gateway `4G LTE / GNSS`, `LoRa`, `Ethernet (W5500)`, `UHF RFID`, `MQTT` • Màn hình cảm ứng `HMI` & log `USB CSV`. |
 
 ---
@@ -38,9 +38,9 @@
 
 > Xem đầy đủ **6 Video vận hành thực tế** & **12 mẫu phần cứng** tại **[thanhlong0235.github.io/embedded-portfolio](https://thanhlong0235.github.io/embedded-portfolio/#videos)**.
 
-| Từ Thiết Kế 3D Altium Đến Mạch Thật<br>*(CAD-to-Hardware Bring-Up)* | Mạch Lái Động Cơ 3 Pha BLDC 4 Lớp<br>*(4-Layer BLDC ESC — CAN, Hall/BEMF)* |
+| Từ Thiết Kế 3D Altium Đến Mạch Thật<br>*(CAD-to-Hardware Bring-Up)* | Bo Điều Khiển Công Suất Dual-MCU (STM32G4 + ESP32)<br>*(Mixed-Signal & Power PCB Layout)* |
 | :---: | :---: |
-| <img src="assets/media/cad-to-hardware-bringup.jpg" width="420" alt="CAD to Hardware Bring-Up" /> | <img src="assets/media/pcb-bldc-esc-3d.png" width="420" alt="4-Layer BLDC ESC 3D PCB" /> |
+| <img src="assets/media/cad-to-hardware-bringup.jpg" width="420" alt="CAD to Hardware Bring-Up" /> | <img src="assets/media/pcb-hv-welder-top-3d.png" width="420" alt="Dual-MCU Power Controller 3D PCB" /> |
 | **Trạm Hub IoT Công Nghiệp (4G + LAN + RS-485)**<br>*(Multi-Protocol Industrial Telemetry Hub)* | **Tích Hợp Tủ Điều Khiển Máy Công Nghiệp**<br>*(Industrial Cabinet Commissioning)* |
 | <img src="assets/media/iot-4g-ethernet-gateway-hub.jpg" width="420" alt="Industrial 4G Ethernet IoT Hub" /> | <img src="assets/media/industrial-cabinet-integration.jpg" width="420" alt="Industrial Cabinet Integration" /> |
 
