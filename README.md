@@ -1,11 +1,10 @@
 # Bùi Thanh Long — Embedded Hardware & Firmware R&D Engineer
 
-[![Live Portfolio Website](https://img.shields.io/badge/Live_Portfolio_(VI_%2F_EN)-thanhlong0235.github.io%2Fembedded--portfolio-10b981?style=for-the-badge)](https://thanhlong0235.github.io/embedded-portfolio/)
+[![Live Portfolio Website](https://img.shields.io/badge/Live_Portfolio-thanhlong0235.github.io%2Fembedded--portfolio-10b981?style=for-the-badge)](https://thanhlong0235.github.io/embedded-portfolio/)
 [![Email](https://img.shields.io/badge/Email-buithanhlong0235%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:buithanhlong0235@gmail.com)
 [![GitHub](https://img.shields.io/badge/GitHub-ThanhLong0235-181717?style=for-the-badge&logo=github)](https://github.com/ThanhLong0235)
 
-> **Website Portfolio (Song ngữ VI / EN, 6 Video chạy máy & Thư viện phần cứng):**  
-> **[https://thanhlong0235.github.io/embedded-portfolio/](https://thanhlong0235.github.io/embedded-portfolio/)**
+> **Website Portfolio:** **[https://thanhlong0235.github.io/embedded-portfolio/](https://thanhlong0235.github.io/embedded-portfolio/)**
 
 ---
 
@@ -47,7 +46,6 @@
 
 ---
 
-## Liên Hệ & Bảo Mật | Contact & NDA
+## Liên Hệ | Contact
 
 - **Email:** [buithanhlong0235@gmail.com](mailto:buithanhlong0235@gmail.com) · **Web:** [thanhlong0235.github.io/embedded-portfolio](https://thanhlong0235.github.io/embedded-portfolio/) · **GitHub:** [@ThanhLong0235](https://github.com/ThanhLong0235)
-- *Lưu ý bảo mật (NDA): Hồ sơ tổng hợp năng lực từ 50+ dự án R&D thực tế; tên khách hàng, sơ đồ nguyên lý và mã nguồn thương mại được lược bỏ.*
