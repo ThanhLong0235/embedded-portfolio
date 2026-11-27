@@ -19,10 +19,10 @@
 
 | Chuyên môn / Domain | Kỹ năng thực chiến / Key Capabilities |
 | :--- | :--- |
-| **Firmware & RTOS** | `Bare-metal` & `FreeRTOS` (`STM32`, `ESP32-S3`, `RISC-V`) • `ADC + DMA` (`200 kSPS`), vòng kín `PID (RTD + SSR)`, Encoder/Flowmeter • `Deep-Sleep`, Flash/EEPROM `CRC`, `OTA` & Bootloader. |
+| **Firmware & RTOS** | `Bare-metal` & `FreeRTOS` (`STM32`, `ESP32-S3`, `RISC-V`) • `ADC + DMA`, điều khiển vòng kín `PID`, Encoder/Flowmeter • `Deep-Sleep`, Flash/EEPROM `CRC`, `OTA` & Bootloader. |
 | **Hardware & PCB DFM** | Schematic phân cấp & Layout PCB 2–4 lớp (`Altium Designer`, `KiCad`) • Chống nhiễu EMC, phân vùng mass, cách ly quang & nguồn DC-DC • Hồ sơ SMT (`BOM`, `Gerber`, `Pick & Place`, `Panel`). |
 | **Power & Machines** | Điều khiển động cơ `DC PWM` (cầu H MOSFET, đảo chiều, khởi động mềm, quá dòng) & `BLDC` • Đóng cắt `IGBT`, `Thyristor / TRIAC`, cụm `SSR`, BMS • Máy pha cà phê 1–3 Group, thiết bị công nghiệp & ô tô `12V/24V`. |
-| **Fieldbus, IoT & HMI** | `RS-485 Modbus RTU`, `CAN Bus`, `SPI-DMA`, analog `4–20mA / 0–10V`, `PLC 24V` • Gateway `4G LTE / GNSS`, `LoRa`, `Ethernet`, `UHF RFID`, `MQTT` • Màn hình cảm ứng `HMI` & log `USB CSV`. |
+| **Fieldbus, IoT & HMI** | `RS-485 Modbus RTU`, `CAN Bus`, `SPI-DMA`, cảm biến công nghiệp `4–20mA / 0–10V / RTD`, `PLC 24V` • Gateway `4G LTE / GNSS`, `LoRa`, `Ethernet`, `UHF RFID`, `MQTT` • Màn hình cảm ứng `HMI` & log `USB CSV`. |
 
 ---
 
