@@ -46,6 +46,13 @@
 
 ---
 
+## Tinh Thần Học Hỏi & Phát Triển | Continuous Learning & Growth
+
+- **Tiếng Việt:** Không dừng lại ở những giải pháp quen thuộc, tôi luôn chủ động tìm hiểu kiến trúc phần cứng – firmware mới, đào sâu tối ưu độ ổn định và liên tục thử sức với các dự án R&D mới đa dạng lĩnh vực để nâng cao năng lực kỹ thuật mỗi ngày.
+- **English:** Never settling for familiar solutions, I actively study emerging hardware/firmware architectures, refine system reliability, and continuously take on new R&D projects across diverse domains to sharpen my engineering craft.
+
+---
+
 ## Liên Hệ | Contact
 
 - **Email:** [buithanhlong0235@gmail.com](mailto:buithanhlong0235@gmail.com) · **Web:** [thanhlong0235.github.io/embedded-portfolio](https://thanhlong0235.github.io/embedded-portfolio/) · **GitHub:** [@ThanhLong0235](https://github.com/ThanhLong0235)
