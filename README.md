@@ -1,110 +1,68 @@
-# Embedded Systems Portfolio — Bui Thanh Long
+# Bùi Thanh Long — Embedded Hardware & Firmware R&D Engineer
 
-[![GitHub Profile](https://img.shields.io/badge/GitHub-ThanhLong0235-181717?style=flat-square&logo=github)](https://github.com/ThanhLong0235)
-[![Email](https://img.shields.io/badge/Email-buithanhlong0235%40gmail.com-EA4335?style=flat-square&logo=gmail)](mailto:buithanhlong0235@gmail.com)
-[![Focus](https://img.shields.io/badge/Focus-Firmware%20%7C%20PCB%20Design%20%7C%20Industrial%20IoT-007ACC?style=flat-square)]()
+[![Live Portfolio Website](https://img.shields.io/badge/🌐_Live_Portfolio_(VI_%2F_EN)-thanhlong0235.github.io%2Fembedded--portfolio-10b981?style=for-the-badge)](https://thanhlong0235.github.io/embedded-portfolio/)
+[![Email](https://img.shields.io/badge/Email-buithanhlong0235%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:buithanhlong0235@gmail.com)
+[![GitHub](https://img.shields.io/badge/GitHub-ThanhLong0235-181717?style=for-the-badge&logo=github)](https://github.com/ThanhLong0235)
 
-Welcome to my **Embedded Systems Engineering Portfolio**. This repository showcases selected hardware and firmware projects covering microcontroller firmware development, real-time operating systems (RTOS), industrial communication protocols, analog/sensor front-ends, and custom PCB design.
-
----
-
-## About Me
-
-- **Role:** Embedded Hardware & Firmware R&D Engineer
-- **Core Competencies:** Bare-metal & RTOS Firmware, Mixed-Signal Sensor Interfaces, Industrial Fieldbuses, IoT Connectivity, Schematic Capture & Multi-layer PCB Layout
-- **Location:** Vietnam
-- **Contact:** [buithanhlong0235@gmail.com](mailto:buithanhlong0235@gmail.com) | [GitHub @ThanhLong0235](https://github.com/ThanhLong0235)
-<!-- [TODO: Add LinkedIn / CV PDF link here if desired] -->
+> **🌐 Trải nghiệm Website Portfolio đầy đủ (Song ngữ VI / EN, 6 Video chạy máy thực tế & 18 mẫu thiết kế PCB / phần cứng):**  
+> 👉 **[https://thanhlong0235.github.io/embedded-portfolio/](https://thanhlong0235.github.io/embedded-portfolio/)**
 
 ---
 
-## Technical Stack
+## 🇻🇳 Giới Thiệu Tổng Quan | 🇬🇧 Executive Summary
 
-| Category | Technologies & Tools |
+**🇻🇳 Tiếng Việt:**  
+Tôi là **Bùi Thanh Long** — **Kỹ sư R&D Phần cứng & Firmware Nhúng** với **3 năm kinh nghiệm chính thức và 1 năm thực tập/intern**, từng trực tiếp tham gia thiết kế, lập trình và hoàn thiện **hơn 150+ dự án và mẫu bo mạch điện tử thương mại – công nghiệp** đưa vào sản xuất thực tế.  
+Thế mạnh cốt lõi của tôi là làm chủ **trọn vẹn vòng đời sản phẩm nhúng**: từ **phân tích bài toán & tối ưu BOM → thiết kế Schematic, Layout PCB 2–4 lớp / cao tần RF / ghép tầng 3D Multi-board → xây dựng kiến trúc Firmware Bare-metal / FreeRTOS → đo kiểm tải thực tế và xuất trọn bộ hồ sơ gia công SMT hàng loạt**.
+
+**🇬🇧 English:**  
+I am **Bùi Thanh Long**, an **Embedded Hardware & Firmware R&D Engineer** with **3 years of full-time R&D experience plus 1 year of internship**, backed by hands-on execution across **150+ commercial and industrial electronic projects and custom PCB revisions**.  
+I specialize in **end-to-end embedded product ownership** — bridging power, mixed-signal, stacked multi-board, and RF hardware design (`Altium Designer`, `KiCad`, 2–4 layer EMC-hardened PCBs, SMT panelization) with deterministic microcontroller firmware (`Bare-metal`, `FreeRTOS`, high-speed `DMA`, closed-loop `PID` / motor control, industrial fieldbuses, and `4G LTE / LoRa / Ethernet` IoT gateways).
+
+---
+
+## ⚡ Năng Lực Kỹ Thuật Cốt Lõi | Core Engineering Pillars
+
+| Mảng chuyên môn / Domain | Năng lực thực chiến / Practical Capabilities |
 | :--- | :--- |
-| **Microcontrollers & SoCs** | `STM32` (F1/F4/G0/G4/H7), `ESP32` / `ESP32-S3`, `AVR` / `PIC`, `nRF52` *(edit as needed)* |
-| **Languages** | `C`, `C++`, `Python` (test automation & tooling), `Bash` |
-| **RTOS & Frameworks** | `FreeRTOS`, `ESP-IDF`, `STM32Cube HAL / LL`, `CMSIS`, `Zephyr` *(optional)* |
-| **Interfaces & Protocols** | `UART`, `RS-485 (Modbus RTU)`, `CAN / CANopen`, `I2C`, `SPI`, `ADC / 4–20mA`, `MQTT`, `BLE`, `Wi-Fi` |
-| **Firmware IDEs & Build** | `STM32CubeIDE`, `Keil MDK-ARM`, `VS Code` + `ESP-IDF` / `PlatformIO`, `CMake`, `GCC ARM`, `Git` |
-| **Hardware & EDA** | `Altium Designer`, `KiCad`, `LTspice` |
-| **Lab & Debugging** | `ST-Link` / `J-Link`, Digital Oscilloscope, Logic Analyzer (`Saleae`), Multimeter, Power Profiler |
+| **1. Firmware, RTOS & Thuật toán điều khiển** | • Kiến trúc state-machine tất định & đa nhiệm **FreeRTOS** (`ESP32 / ESP32-S3` Dual-Core SMP, `STM32 G4/F4/F1/L/G0`, `WCH RISC-V`).<br>• Ngoại vi tốc độ cao & vòng kín: `TIM TRGO → ADC → Circular DMA` (`200 kSPS`), ngắt bảo vệ `1 µs`, điều khiển nhiệt **PID đa kênh (`RTD + SSR`)**, định lượng xung Flowmeter/Encoder.<br>• Chế độ ngủ sâu tiết kiệm pin (`STM8L / STM32L`), lưu trữ Flash/EEPROM kèm `CRC-8/16`, cập nhật `OTA`, bootloader & xác thực `XTEA` + tool `Python`. |
+| **2. Schematic, Multi-Layer / RF PCB & DFM** | • Thiết kế Schematic phân cấp (multi-sheet), Layout PCB 2–4 lớp và ghép chồng cơ khí **3D Multi-Board Stack** trên **Altium Designer** & **KiCad**.<br>• Chống nhiễu công nghiệp (EMC) & RF: phân vùng mass công suất/analog, đường đồng mở phủ thiếc, đường truyền `50 Ω` bọc hàng rào via (`GNSS/RF LNA` + lọc SAW), cách ly quang/DC-DC/`ISO1540` & dập xung `TVS`.<br>• Xuất hồ sơ sản xuất hàng loạt SMT: `Gerber`, `NC Drill`, tối ưu `BOM`, `Pick & Place` và ghép vỉ `Panel` (V-cut / mouse-bites). |
+| **3. Điện tử công suất, Động cơ & Máy thương mại** | • Thiết kế mạch lái động cơ 3 pha **BLDC ESC** (4 lớp, cảm biến Hall & BEMF, khởi động mềm chống dòng xung, bảo vệ quá dòng & TVS hãm tái sinh).<br>• Đóng cắt công suất: cụm **IGBT 600V/50A** phóng nạp tụ (`0–150 VDC`), góc mở **Thyristor / TRIAC / Trailing-Edge Dimmer 220VAC**, cụm **SSR 40A–100A**, sạc Solar Boost & bảo vệ BMS.<br>• Tự động hóa thiết bị: hệ sinh thái bo mạch **máy pha cà phê 1–3 Group**, lò công nghiệp, máy điện phân, bo mở rộng `16-In / 32-Out` và điện tử ô tô `12V/24V`. |
+| **4. Fieldbus, Viễn thông 4G/LoRa & HMI** | • Giao thức công nghiệp & đo lường: `RS-485 Modbus RTU` (Dual RS-485), `CAN Bus`, `SPI + DMA`, ngõ vào `4–20mA / 0–10V` (`ADS1115`), đo điện năng AC & giao tiếp `PLC 24V`.<br>• Gateway IoT đa mạng: viễn thông di động **4G LTE / NB-IoT / GNSS** (`SIM7600`, `A7680C`, `SIM7080G`), **LoRa Mesh**, **Ethernet (`W5500`)**, `Zigbee / Sub-GHz RF`, `UHF RFID`, radar `mmWave` & `MQTT / Cloud`.<br>• Hệ thống HMI & Audio: màn hình cảm ứng `800×480` vẽ sóng & giám sát hành trình, LED ma trận cân điện tử, ghi log `FAT32 CSV` qua USB (`CH376S`) và mạch âm thanh `OPA627` / đa kênh. |
 
 ---
 
-## Featured Projects Overview
+## 🛠️ Hệ Sinh Thái Công Nghệ | Technical Stack
 
-> Click on any **Project Name** below to view full system architecture, hardware/board specifications, firmware design, schematics, and test results.
-
-| # | Project | Summary | Target Board / MCU | Firmware & Software | Key Interfaces & Specs | Status |
-| :-: | :--- | :--- | :--- | :--- | :--- | :---: |
-| **01** | [**Industrial Sensor & 4–20mA Node**](./projects/01-industrial-sensor-node/) | `[TODO: High-precision analog current-loop acquisition & Modbus RTU telemetry node]` | Custom PCB / `STM32G030` + `ADS1115` | `C`, `STM32CubeIDE` (HAL/LL), `Altium Designer` | `I2C`, `RS-485 Modbus RTU`, `16-bit ADC`, `4–20mA` | Production / Prototype |
-| **02** | [**Wireless Industrial IoT Edge Gateway**](./projects/02-iot-edge-gateway/) | `[TODO: Multi-protocol gateway bridging fieldbus sensors to cloud MQTT broker with OTA]` | Custom Board / `ESP32-S3` | `C/C++`, `ESP-IDF`, `FreeRTOS`, `MQTT/TLS` | `Wi-Fi`, `BLE`, `RS-485`, `SPI Flash`, `OTA` | Prototype |
-| **03** | [**Percussion Welding Controller (Rev V3)**](./projects/03-custom-pcb-controller/) | Dual-MCU capacitor-discharge arc welding controller with `200 kSPS` DMA waveform capture, `1 µs` IGBT cutoff & in-situ `PASS/REJECT` inspection | Custom PCB (`220×110 mm`) / `STM32G431` + `ESP32` | `C/C++`, `FreeRTOS`, `Keil MDK`, `PlatformIO`, `Altium` | `SPI-DMA`, `RS-485 Modbus RTU`, `Isolated I2C`, `24V PLC I/O`, `USB Host` | Production (Rev V3) |
+- **MCUs & Wireless SoCs (10+ Lines):** `STM32` (`G431`, `F4`, `F103`, `L`, `G030`), `ESP32` / `ESP32-S3` / `ESP8266`, `WCH RISC-V` (`CH32V003`, `CH32V203`) & `CH552`, `Nuvoton` (`MS51`, `N76E003`), `STM8S` / `STM8L`, `AVR` (`ATmega2560`, `ATmega328P`, `ATtiny`), `PIC`, `Realtek BW16`
+- **Firmware & Compilers:** `C` (`C99/C11`), `C++`, `FreeRTOS`, `STM32 HAL/LL`, `ESP-IDF`, `PlatformIO`, `Keil MDK-ARM & C51`, `IAR (EWARM / EWSTM8)`, `STM32CubeIDE`, `MounRiver Studio`, `Python`, `Git`
+- **Hardware EDA & Lab:** `Altium Designer`, `KiCad`, `Proteus`, `LTspice`, Digital Oscilloscope, Logic Analyzer, `ST-Link` / `J-Link`
 
 ---
 
-## Detailed Project Highlights
+## 📸 Minh Chứng Thiết Kế & Phần Cứng Thực Tế | Visual Highlights
 
-### 1. [Industrial Sensor & 4–20mA Acquisition Node](./projects/01-industrial-sensor-node/)
-- **Overview:** `[TODO: 2–3 sentences describing the problem solved, operating environment, and core value of the device.]`
-- **Hardware / Board:** `[TODO: e.g., Custom 2-layer PCB designed in Altium Designer, STM32G030F6P6 MCU, ADS1115 16-bit delta-sigma ADC, TVS surge protection, isolated RS-485 transceiver, 24VDC industrial power input.]`
-- **Software & Toolchain:** `STM32CubeIDE`, `STM32 HAL/LL`, bare-metal state machine / `FreeRTOS`, Python calibration script.
-- **Key Highlights:**
-  - `[TODO: e.g., Achieved < 0.1% full-scale measurement accuracy across 4–20mA span]`
-  - `[TODO: e.g., Non-blocking DMA UART communication with hardware CRC-16 Modbus RTU]`
-- **Details & Documentation:** [View Full Project →](./projects/01-industrial-sensor-node/)
+> 🎬 **Xem trọn bộ 6 Video chạy máy thực tế & 18 hình ảnh độ phân giải cao tại [Website Portfolio](https://thanhlong0235.github.io/embedded-portfolio/#videos).**
 
----
-
-### 2. [Wireless Industrial IoT Edge Gateway](./projects/02-iot-edge-gateway/)
-- **Overview:** `[TODO: 2–3 sentences describing how data is collected from local nodes, buffered offline, and published securely to the cloud.]`
-- **Hardware / Board:** `[TODO: e.g., Goouuu / Custom ESP32-S3 module carrier board, dual-core XTensa LX7, external antenna, RTC backup, RS-485 & CAN transceivers.]`
-- **Software & Toolchain:** `ESP-IDF v5.x`, `FreeRTOS` multi-tasking architecture, `Altium Designer`, `Mosquitto / AWS IoT`.
-- **Key Highlights:**
-  - `[TODO: e.g., Deterministic FreeRTOS task partitioning between fieldbus polling and Wi-Fi/MQTT stack]`
-  - `[TODO: e.g., Ring-buffer flash logging during network outages + secure HTTPS OTA firmware updates]`
-- **Details & Documentation:** [View Full Project →](./projects/02-iot-edge-gateway/)
+| Từ Thiết Kế 3D Altium Đến Bo Mạch Thực Tế<br>*(CAD-to-Hardware Bring-Up)* | Thiết Kế 4 Lớp Mạch Lái Động Cơ 3 Pha BLDC<br>*(4-Layer BLDC ESC — CAN, Hall/BEMF, Soft-Start)* |
+| :---: | :---: |
+| <img src="assets/media/cad-to-hardware-bringup.jpg" width="430" alt="CAD to Hardware Bring-Up" /> | <img src="assets/media/pcb-bldc-esc-3d.png" width="430" alt="4-Layer BLDC ESC 3D PCB" /> |
+| **Kiến Trúc Ghép Chồng 3 Tầng 3D Multi-Board**<br>*(3-Tier Stacked Controller — ESP32-S3, LAN, Relays)* | **Trạm Hub IoT Đa Giao Thức (4G LTE + LAN + RS-485)**<br>*(Industrial Telemetry Hub — A7680C, W5500, Zigbee)* |
+| <img src="assets/media/pcb-multiboard-stack-3d.png" width="430" alt="3-Tier Multi-Board Stack 3D" /> | <img src="assets/media/iot-4g-ethernet-gateway-hub.jpg" width="430" alt="Industrial 4G Ethernet IoT Hub" /> |
+| **Mạch Cao Tần 2 Tầng Khuếch Đại RF / GNSS LNA**<br>*(50-Ω Coplanar Waveguide, SAW Filter & Via Stitching)* | **Tích Hợp Tủ Điều Khiển & Đồ Thị Sóng 200 kSPS**<br>*(Industrial Cabinet Commissioning & Waveform HMI)* |
+| <img src="assets/media/pcb-rf-gps-lna-3d.png" width="430" alt="RF GNSS LNA 3D PCB" /> | <img src="assets/media/industrial-cabinet-integration.jpg" width="430" alt="Industrial Cabinet Integration" /> |
 
 ---
 
-### 3. [Dual-MCU Capacitor-Discharge Percussion Welding Controller (Rev V3)](./projects/03-custom-pcb-controller/)
-- **Overview:** Industrial controller for microsecond-scale (`100–5,000 µs`, `0–150 VDC`) capacitor-discharge percussion welding. Decouples hard real-time IGBT ignition and `200 kSPS` transient waveform inspection (`STM32G431`) from multi-tasking HMI visualization, programmable HV power control, `10–100 µF` capacitor bank switching, and USB traceability (`ESP32`).
-- **Hardware / Board:** Custom `220 mm × 110 mm` mixed-signal/HV PCB in `Altium Designer` (`STM32G431CBT6` @ `170 MHz` + `ESP32-WROOM-32U`, `3× 600V/50A` IGBTs with `B0512S` isolated gate drives, `10×` relay capacitor bank via `ISO1540` + `PCF8575`, `0.01%` HV divider, `24V` opto-isolated PLC I/O + `74HC14` Schmitt triggers, `CH376S` USB-A host).
-- **Software & Toolchain:** `Keil MDK-ARM` (`STM32 HAL`), `VS Code + PlatformIO` (`FreeRTOS` dual-core SMP), `Altium Designer`, `800×480` UART HMI.
-- **Key Highlights:**
-  - Phase-locked `TIM7 → ADC2 → Circular DMA` acquisition (`5 µs` resolution) synchronized to `EXTI0` workpiece contact for real-time `V0` & arc-time `t(a)` `LSL/USL` quality judgment
-  - Framed `974-byte` `SPI + DMA` inter-MCU waveform bus + closed-loop `Modbus RTU` HV supply sync + chunked FAT32 `DATA_LOG.CSV` export
-- **Details & Documentation:** [View Full Project →](./projects/03-custom-pcb-controller/)
+## 🔒 Bảo Mật Thông Tin (Confidentiality & NDA Notice)
+
+Hồ sơ này tổng hợp kỹ năng và kinh nghiệm thực chiến từ hơn 150+ dự án R&D thương mại và phát triển độc lập. Để tuân thủ cam kết bảo mật (NDA) và quyền sở hữu trí tuệ của khách hàng/doanh nghiệp, mọi tên khách hàng, mã dự án nội bộ, sơ đồ nguyên lý chi tiết (`.SchDoc`) và mã nguồn thương mại đều được lược bỏ.
 
 ---
 
-## Repository Structure
+## 📬 Liên Hệ | Contact
 
-```text
-embedded-portfolio/
-├── README.md                         # Portfolio overview, tech stack & project matrix
-├── templates/
-│   └── PROJECT_TEMPLATE.md           # Standardized template for adding new projects
-├── assets/                           # Shared portfolio banners, diagrams, or badges
-└── projects/
-    ├── 01-industrial-sensor-node/    # Project 01: Summary, board specs, firmware, media
-    ├── 02-iot-edge-gateway/          # Project 02: Summary, board specs, firmware, media
-    └── 03-custom-pcb-controller/     # Project 03: Summary, board specs, firmware, media
-```
-
-### How to Add a New Project
-1. Duplicate [`templates/PROJECT_TEMPLATE.md`](./templates/PROJECT_TEMPLATE.md) into a new folder `projects/04-your-project-name/README.md`.
-2. Place board renders, PCB photos, logic analyzer captures, or demo GIFs in `projects/04-your-project-name/media/`.
-3. Place public schematics (PDF), BOM excerpts, or code snippets in `hardware/` and `firmware/` (keep proprietary company IP redacted if under NDA).
-4. Add a new row to the **Featured Projects Overview** table above.
-
----
-
-## Confidentiality & IP Notice
-
-Some commercial R&D projects were developed for industrial clients or employers. Where applicable, proprietary source code and full manufacturing Gerbers are omitted or sanitized; architectural block diagrams, hardware specifications, design methodologies, and verified performance metrics are documented to demonstrate engineering work.
-
-## License
-
-Documentation and sample code snippets in this portfolio are released under the [MIT License](./LICENSE), unless stated otherwise in individual project folders.
+- **Họ tên / Name:** Bùi Thanh Long
+- **Email:** [buithanhlong0235@gmail.com](mailto:buithanhlong0235@gmail.com)
+- **Portfolio Web (VI / EN):** [https://thanhlong0235.github.io/embedded-portfolio/](https://thanhlong0235.github.io/embedded-portfolio/)
+- **GitHub:** [@ThanhLong0235](https://github.com/ThanhLong0235)
