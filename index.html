@@ -464,7 +464,7 @@
           <!-- Video 2 -->
           <article class="video-card">
             <div class="video-stage">
-              <video controls preload="metadata" playsinline muted poster="assets/media/pid-rtd-ssr-controller.jpg">
+              <video controls preload="metadata" playsinline muted>
                 <source src="assets/media/demo-pid-ssr-thermal-control.mp4" type="video/mp4" />
               </video>
             </div>
@@ -649,20 +649,20 @@
             </div>
           </article>
 
-          <!-- 3. HV Welder Bottom -->
+          <!-- 3. STM32L Industrial Data Logger -->
           <article class="gallery-card" data-category="pcb3d" data-lightbox>
             <div class="gallery-thumb">
-              <img src="assets/media/pcb-hv-welder-bottom-3d.png" alt="Zoned Ground & High-Current Busbars Bottom 3D" loading="lazy" />
+              <img src="assets/media/pcb-stm32l-datalogger-3d.png" alt="STM32L Industrial Data Logger PCB 3D" loading="lazy" />
             </div>
             <div class="gallery-info">
-              <span class="gallery-cat"><span data-i18n="vi">Chống nhiễu EMC — Phân vùng Mass</span><span data-i18n="en">EMC Layout — Zoned Ground</span></span>
+              <span class="gallery-cat"><span data-i18n="vi">Altium 3D — STM32L & Viễn thông</span><span data-i18n="en">Altium 3D — STM32L & Telemetry</span></span>
               <h3 class="gallery-title">
-                <span data-i18n="vi">Phân vùng Mass độc lập & Đường đồng mở phủ thiếc</span>
-                <span data-i18n="en">Zoned Ground Planes & Solder-Reinforced Busbars</span>
+                <span data-i18n="vi">Bo mạch thu thập dữ liệu công nghiệp STM32L (4G, RS-485, Analog/DI)</span>
+                <span data-i18n="en">STM32L Industrial Data Logger PCB (Cellular, RS-485, Analog/DI)</span>
               </h3>
               <p class="gallery-desc">
-                <span data-i18n="vi">Cô lập dòng xung lớn dI/dt chống nhiễu MCU và mở mặt nạ hàn tăng tiết diện dẫn dòng.</span>
-                <span data-i18n="en">Dedicated return paths isolate high dI/dt spikes, paired with exposed copper current busbars.</span>
+                <span data-i18n="vi">Thiết kế đa bo xếp tầng tích hợp STM32L tiết kiệm năng lượng, thẻ nhớ SD, cách ly quang và USB-C.</span>
+                <span data-i18n="en">Stacked multi-board design integrating low-power STM32L, MicroSD, opto-isolated I/O, and USB-C.</span>
               </p>
             </div>
           </article>
@@ -685,38 +685,38 @@
             </div>
           </article>
 
-          <!-- 5. 4G LTE + Ethernet + Wi-Fi + RS485 Gateway Hub -->
+          <!-- 5. 4G LTE + Ethernet + Wi-Fi + RS485 Gateway Hub & WebServer -->
           <article class="gallery-card" data-category="hardware" data-lightbox>
             <div class="gallery-thumb">
-              <img src="assets/media/iot-4g-ethernet-gateway-hub.jpg" alt="Industrial 4G LTE Ethernet Wi-Fi RS-485 Hub" loading="lazy" />
+              <img src="assets/media/iot-hub-webserver.jpg" alt="Industrial IoT Hub Hardware and Embedded WebServer UI" loading="lazy" />
             </div>
             <div class="gallery-info">
-              <span class="gallery-cat"><span data-i18n="vi">Trạm IoT — 4G + LAN + RS485</span><span data-i18n="en">IoT Gateway — 4G + LAN + RS485</span></span>
+              <span class="gallery-cat"><span data-i18n="vi">Trạm IoT — Phần cứng & WebServer</span><span data-i18n="en">IoT Gateway — Hardware & WebServer</span></span>
               <h3 class="gallery-title">
-                <span data-i18n="vi">Trạm Hub IoT công nghiệp (4G LTE + Ethernet + ESP32)</span>
-                <span data-i18n="en">Industrial IoT Hub (4G LTE, Ethernet, Wi-Fi, RS-485)</span>
+                <span data-i18n="vi">Trạm Hub IoT công nghiệp & Giao diện WebServer nhúng</span>
+                <span data-i18n="en">Industrial IoT Hub & Embedded WebServer UI</span>
               </h3>
               <p class="gallery-desc">
-                <span data-i18n="vi">Tích hợp 4G LTE, Ethernet, RS-485, Zigbee, 8 ngõ vào cách ly quang và 4 ngõ ra Relay.</span>
-                <span data-i18n="en">Combines 4G LTE, Ethernet, ESP32, RS-485, 8× isolated inputs, and 4× relays.</span>
+                <span data-i18n="vi">Tích hợp 4G LTE, Ethernet, Wi-Fi, RS-485, 8DI/4DO kèm WebServer giám sát I/O và chuyển mạch mạng dự phòng.</span>
+                <span data-i18n="en">Combines 4G LTE, Ethernet, Wi-Fi, RS-485, and isolated I/O with a built-in WebServer for live control and network failover.</span>
               </p>
             </div>
           </article>
 
-          <!-- 6. PID RTD + 3x Industrial SSR -->
-          <article class="gallery-card" data-category="hardware" data-lightbox>
+          <!-- 6. 3-Channel PT100 RTD & Industrial SSR -->
+          <article class="gallery-card" data-category="pcb3d" data-lightbox>
             <div class="gallery-thumb">
-              <img src="assets/media/pid-rtd-ssr-controller.jpg" alt="3-Channel RTD Temperature and Industrial SSR PID Controller" loading="lazy" />
+              <img src="assets/media/rtd-pt100-ssr-controller.png" alt="3-Channel PT100 RTD Acquisition and Industrial SSR Controller PCB" loading="lazy" />
             </div>
             <div class="gallery-info">
-              <span class="gallery-cat"><span data-i18n="vi">Điều khiển nhiệt — RTD & SSR</span><span data-i18n="en">Thermal Control — RTD & SSR</span></span>
+              <span class="gallery-cat"><span data-i18n="vi">Altium 3D — Đo nhiệt RTD & SSR</span><span data-i18n="en">Altium 3D — RTD Sensing & SSR</span></span>
               <h3 class="gallery-title">
-                <span data-i18n="vi">Cặp mạch đo nhiệt 3 kênh RTD & điều khiển PID SSR</span>
-                <span data-i18n="en">3-Channel RTD Front-End & Industrial SSR PID Boards</span>
+                <span data-i18n="vi">Bo mạch đọc 3 kênh cảm biến nhiệt RTD PT100 & điều khiển SSR</span>
+                <span data-i18n="en">3-Channel PT100 RTD Acquisition & SSR Controller PCB</span>
               </h3>
               <p class="gallery-desc">
-                <span data-i18n="vi">Thu thập tín hiệu chính xác từ 3 đầu dò nhiệt RTD và lái SSR công suất 40A–100A.</span>
-                <span data-i18n="en">Precision 3-zone RTD analog acquisition paired with 40A–100A industrial SSR switching.</span>
+                <span data-i18n="vi">Tích hợp 3 kênh chuyển đổi chuyên dụng đọc chính xác đầu dò PT100, giao tiếp USB và ngõ ra lái 3 kênh SSR.</span>
+                <span data-i18n="en">Integrates 3 dedicated precision PT100 front-end channels, USB interface, and 3× industrial SSR outputs.</span>
               </p>
             </div>
           </article>
