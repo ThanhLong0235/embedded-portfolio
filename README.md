@@ -38,9 +38,9 @@
 
 > **[Xem thêm tại đây](https://thanhlong0235.github.io/embedded-portfolio/)**
 
-| Từ Thiết Kế 3D Altium Đến Mạch Thật | Trạm Hub IoT & Giao Diện WebServer |
-| :---: | :---: |
-| <img src="assets/media/cad-to-hardware-bringup.jpg" width="420" alt="CAD to Hardware Bring-Up" /> | <img src="assets/media/iot-hub-webserver.jpg" width="420" alt="Industrial IoT Hub and WebServer UI" /> |
+| Từ Thiết Kế 3D Altium Đến Mạch Thật |
+| :---: |
+| <img src="assets/media/cad-to-hardware-bringup.jpg" width="460" alt="CAD to Hardware Bring-Up" /> |
 
 ---
 
