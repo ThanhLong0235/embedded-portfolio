@@ -19,18 +19,18 @@
 
 | Chuyên môn / Domain | Kỹ năng thực chiến / Key Capabilities |
 | :--- | :--- |
-| **Firmware & RTOS** | `Bare-metal` & `FreeRTOS` (`STM32`, `ESP32-S3`, `RISC-V`) • `ADC + DMA`, điều khiển vòng kín `PID`, Encoder/Flowmeter • `Deep-Sleep`, Flash/EEPROM `CRC`, `OTA` & Bootloader. |
-| **Hardware & PCB DFM** | Schematic phân cấp & Layout PCB 2–4 lớp (`Altium Designer`, `KiCad`) • Chống nhiễu EMC, phân vùng mass, cách ly quang & nguồn DC-DC • Hồ sơ SMT (`BOM`, `Gerber`, `Pick & Place`, `Panel`). |
-| **Power & Machines** | Điều khiển động cơ `DC PWM` (cầu H MOSFET, đảo chiều, khởi động mềm, quá dòng) & `BLDC` • Đóng cắt `IGBT`, `Thyristor / TRIAC`, cụm `SSR`, BMS • Máy pha cà phê 1–3 Group, thiết bị công nghiệp & ô tô `12V/24V`. |
-| **Fieldbus, IoT & HMI** | `RS-485 Modbus RTU`, `CAN Bus`, `SPI-DMA`, cảm biến công nghiệp `4–20mA / 0–10V / RTD`, `PLC 24V` • Gateway `4G LTE / GNSS`, `LoRa`, `Ethernet`, `UHF RFID`, `MQTT` • Màn hình cảm ứng `HMI` & log `USB CSV`. |
+| **Firmware & RTOS** | `Bare-metal` & `FreeRTOS` (`STM32`, `ESP32-S3`, `RISC-V`); thu thập `ADC + DMA`, điều khiển vòng kín `PID`, Encoder/Flowmeter; tối ưu `Deep-Sleep`, lưu trữ Flash/EEPROM `CRC`, `OTA` & Bootloader. |
+| **Hardware & PCB DFM** | Thiết kế Schematic phân cấp & Layout PCB 2–4 lớp (`Altium Designer`, `KiCad`); chống nhiễu EMC, phân vùng mass, cách ly quang & nguồn DC-DC; xuất hồ sơ SMT (`BOM`, `Gerber`, `Pick & Place`, `Panel`). |
+| **Power & Machines** | Điều khiển động cơ `DC PWM` (cầu H MOSFET, đảo chiều, khởi động mềm, quá dòng) & `BLDC`; đóng cắt `IGBT`, `Thyristor / TRIAC`, `SSR`, BMS; phát triển mạch máy pha cà phê 1–3 Group, thiết bị công nghiệp & ô tô `12V/24V`. |
+| **Fieldbus, IoT & HMI** | Giao tiếp `RS-485 Modbus RTU`, `CAN Bus`, `SPI-DMA`, cảm biến công nghiệp `4–20mA / 0–10V / RTD`, `PLC 24V`; Gateway `4G LTE / GNSS`, `LoRa`, `Ethernet`, `UHF RFID`, `MQTT`; màn hình cảm ứng `HMI` & ghi log `USB CSV`. |
 
 ---
 
 ## Công Nghệ | Tech Stack
 
-- **MCUs & SoCs:** `STM32` (`G4`, `F4`, `F1`, `L`, `G0`), `ESP32` / `ESP32-S3` / `ESP8266`, `WCH RISC-V` (`CH32V003`, `V203`), `Nuvoton`, `STM8S/L`, `AVR`, `PIC`, `BW16`
+- **MCUs & SoCs:** `STM32` (`G4`, `F4`, `F1`, `L`, `G0`), `ESP32` / `ESP32-S3` / `ESP8266`, `WCH RISC-V` (`CH32V003`, `V203`), `Nuvoton`, `STM8S/L`, `AVR`, `PIC`
 - **Firmware & Tools:** `C` (`C99/C11`), `C++`, `FreeRTOS`, `STM32 HAL/LL`, `ESP-IDF`, `PlatformIO`, `Keil`, `IAR`, `STM32CubeIDE`, `Python`, `Git`
-- **Hardware & Lab:** `Altium Designer`, `KiCad`, `Proteus`, `LTspice`, Oscilloscope, Logic Analyzer, `ST-Link` / `J-Link`
+- **Hardware & Lab:** `Altium Designer`, `KiCad`, `Proteus`, `LTspice`, Oscilloscope, Logic Analyzer, `ST-Link`
 
 ---
 
@@ -53,4 +53,6 @@
 
 ## Liên Hệ | Contact
 
-- **Email:** [buithanhlong0235@gmail.com](mailto:buithanhlong0235@gmail.com) · **Web:** [thanhlong0235.github.io/embedded-portfolio](https://thanhlong0235.github.io/embedded-portfolio/) · **GitHub:** [@ThanhLong0235](https://github.com/ThanhLong0235)
+- **Email:** [buithanhlong0235@gmail.com](mailto:buithanhlong0235@gmail.com)
+- **Web:** [thanhlong0235.github.io/embedded-portfolio](https://thanhlong0235.github.io/embedded-portfolio/)
+- **GitHub:** [@ThanhLong0235](https://github.com/ThanhLong0235)
