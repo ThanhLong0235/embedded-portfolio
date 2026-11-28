@@ -10,8 +10,8 @@
 
 ## Giới Thiệu | Summary
 
-- **Tiếng Việt:** Kỹ sư R&D Phần cứng & Firmware Nhúng (**3 năm chính thức + 1 năm thực tập**), trực tiếp phát triển **50+ dự án & mẫu bo mạch thương mại – công nghiệp**. Làm chủ trọn quy trình từ thiết kế Schematic, Layout PCB 2–4 lớp đến lập trình Firmware **Bare-metal / FreeRTOS**, đo kiểm tải và bàn giao hồ sơ SMT hàng loạt.
-- **English:** Full-cycle Embedded Hardware & Firmware R&D Engineer (**3 yrs full-time + 1 yr internship**) with hands-on delivery across **50+ commercial & industrial projects** — owning schematic capture, 2–4 layer EMC-hardened PCB layout, deterministic **Bare-metal / FreeRTOS** firmware, bench validation, and mass-production SMT release.
+- **Tiếng Việt:** Kỹ sư R&D Phần cứng & Firmware Nhúng (**3 năm chính thức + 1 năm thực tập**), trực tiếp phát triển **30+ dự án & mẫu bo mạch thương mại – công nghiệp**. Làm chủ trọn quy trình từ thiết kế Schematic, Layout PCB 2–4 lớp đến lập trình Firmware **Bare-metal / FreeRTOS**, đo kiểm tải và bàn giao hồ sơ SMT hàng loạt.
+- **English:** Full-cycle Embedded Hardware & Firmware R&D Engineer (**3 yrs full-time + 1 yr internship**) with hands-on delivery across **30+ commercial & industrial projects** — owning schematic capture, 2–4 layer EMC-hardened PCB layout, deterministic **Bare-metal / FreeRTOS** firmware, bench validation, and mass-production SMT release.
 
 ---
 
